@@ -1,0 +1,20 @@
+language: node_js
+before_install:
+  - git config credential.helper "store --file=.git/credentials"; echo "https://${github_token}:@github.com" > .git/credentials 2>/dev/null
+  - git config --global user.email "vener.guevarra@gmail.com"
+  - git config --global user.name "venerguevarra"
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
+script:
+  - npm test
+  - npm run build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $github_token
+  local_dir: build
+  on:
+    branch: master

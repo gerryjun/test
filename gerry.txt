@@ -1,0 +1,21 @@
+
+atom editor-
+github
+https://travis-ci.org/profile/gerryjun
+
+
+
+reactjs
+
+npm  -g create-react-app
+
+outhe.
+
+921b3dcf9836e964622cc8d06ae8534444e04f90
+
+material 
+
+creative-tim
+
+
+https://github.com/venerguevarra/hello-world-app.git
